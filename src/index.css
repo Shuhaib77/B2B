@@ -68,3 +68,7 @@ button:focus-visible {
 } */
 
 @import "tailwindcss";
+
+h1{
+  color: #071952;
+}
