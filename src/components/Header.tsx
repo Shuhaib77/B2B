@@ -1,10 +1,14 @@
 import React from 'react'
 
-function Header() {
+function Header({setOpen,open}) {
   return (
     <div>
-        <div className='flex justify-around h-[50px] bg-pink-600 w-[80vw] items-center '>
-            <h1>hii</h1>
+        <div className='flex justify-between h-[50px] bg-[#7942af70] items-center '>
+           <h1 onClick={()=>{
+          open === false?setOpen(true):setOpen(false)
+            
+           }}>MENU</h1>
+             <h1>hii</h1>
             <h1>hii</h1>
             <h1>hii</h1>
             <h1>hii</h1>
