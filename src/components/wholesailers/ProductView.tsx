@@ -1,11 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProductView() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="grid grid-cols-1 gap-y-5">
         <div>
-            <h1 className="text-xl font-bold ">Our Collection Of Products</h1>
+          <h1 className="text-xl font-bold ">Our Collection Of Products</h1>
           <input
             type="text"
             className="w-full border rounded-3xl p-2 mt-5"
@@ -22,8 +24,10 @@ function ProductView() {
           {/* {sortedProducts.length ? (
           sortedProducts.map((item) => ( */}
           <div
-            
             className="lg:w-[250px]  lg:h-[330px] bg-gray-200 p-3 overflow-auto"
+            onClick={() => {
+              navigate("/productdetail");
+            }}
           >
             <div className="bg-red-600 rounded w-full h-[240px]">
               <img className="w-full h-full object-cover" src="" alt="" />
