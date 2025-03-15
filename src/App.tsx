@@ -6,6 +6,9 @@ import Login from './pages/Authentication'
 import Dashboard from './pages/Dashboard'
 import WholesailerHome from './pages/WholesailerHome'
 import WholesailerProductView from './pages/WholesailerProductView'
+import ProductDetails from './pages/ProductDetails'
+import Cart from './pages/Cart'
+import Orders from './pages/Orders'
 
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
           <Route path='/dashboard/:url/:id' element={<Dashboard/>}></Route>
           <Route path='/wholesailerh' element={<WholesailerHome/>}></Route>
           <Route path='/allproduct' element={<WholesailerProductView/>}></Route>
+          <Route path='/productdetail' element={<ProductDetails/>}></Route>
+          <Route path='/cart' element={<Cart/>}></Route>
+          <Route path='/orders' element={<Orders/>}></Route>
         </Routes>
 
     
